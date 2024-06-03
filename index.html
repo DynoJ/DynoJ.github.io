@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE = edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack - Full-Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/457e5bfab1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src = "images/L1.png" class="L1">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm<span> Jack Kammerer</span><br> from Austin, Texas.</h1>
+         </div>
+    </div>
+</div>
+
+
+
+<div id = "about">
+    <div class = "container">
+        <div class = "row";>
+            <div class = "about-col-1">
+                <img src = "images/test.jpeg">
+            </div>
+            <div class = "about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am currently completing my Bachelor of Science in Computer Science with a minor
+                    in Business Administration at Texas State University, with an expected graduation 
+                    in the summer of 2025. My academic journey has not only ignited my passion for 
+                    technology but also sharpened my problem-solving skills and deepened my understanding 
+                    of complex systems. I am proficient in a variety of programming languages, including 
+                    C++, Java, JavaScript, HTML, CSS, Python, and Unix Shell Scripting. Furthermore, I 
+                    have experience with tools and technologies such as Git, GitHub, GitKraken, Bitbucket, 
+                    React, Flask, Jira, Microsoft Suite, Unity, and HTML/CSS.
+
+                    Throughout my time at university, I have engaged in various extracurricular activities, 
+                    including Boko Hacks, the Google Developer Student Club, and IEEE. My practical 
+                    experience includes roles as a Framer at Hobby Lobby and an IT Assistant at Texas State, 
+                    where I honed my teamwork and customer interaction skills.
+
+                    I also involved myself in the Rock Climbing Club, where I primarily engaged in top rope 
+                    and bouldering. This sport not only brings excitement but also develops resilience and 
+                    focus—qualities that I bring to every professional endeavor. I am dedicated to 
+                    continuous learning and positively contributing to every team I join.
+                </p>
+
+                <div class = "tab-titles">
+                    <p class = "tab-links active-link" onclick = "opentab('skills')">Skills</p>
+                    <p class = "tab-links" onclick = "opentab('experience')">Experience</p>
+                    <p class = "tab-links" onclick = "opentab('education')">Education</p>
+                </div>
+                <div class = "tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/IOS apps</li>
+                    </ul>
+                </div>
+                <div class = "tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024-current</span><br>Project1</li>
+                        <li><span>2023-2024</span><br>Web Development</li>
+                        <li><span>2023-2023</span><br>Computer Architecture</li>
+                        <li><span>2022-2022</span><br>ICPC</li>
+                    </ul>
+                </div>
+                <div class = "tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br>Bachelors in Computer Science</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id = "services">
+    <div class = "container">
+        <h1 class = "sub-title">My Services</h1>
+        <div class = "services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I create custom, responsive websites that perfectly balance functionality with 
+                    aesthetics. My designs ensure a seamless user experience that captivates your 
+                    audience and solidifies your online presence.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>I design intuitive and visually engaging user interfaces that enhance usability
+                    and maximize user satisfaction. My focus is on creating seamless interactions 
+                    across all devices, making every user journey a pleasant one.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I develop cutting-edge mobile applications tailored to your specific business 
+                    requirements. My approach combines attractive, user-friendly design with robust
+                    functionality, delivering apps that not only look great but perform brilliantly.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id = "portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/dott.png">
+                <div class="layer">
+                    <h3>To Be Determined</h3>
+                    <p>Description</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/dott.png">
+                <div class="layer">
+                    <h3>To Be Determined</h3>
+                    <p>Description</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/dott.png">
+                <div class="layer">
+                    <h3>To Be Determined</h3>
+                    <p>Description</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+        </div>
+        <a href="https://DynoJ.github.io" class="btn"> GitHub</a>
+    </div>
+</div>
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> JackWilliamKammerer@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 512-487-2919</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/jjjjjackkkkkk/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/jack-kammerer-6b60bb311"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right"> 
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Eamil" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© Jack Kammerer.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+   
+    function opentab(tabname){
+        for(let tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(let tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyyTn8mtkKwrcmHssI6VqznmgKD1ZGJefcgj-osNo7kaTre9GvJ_FKeCDaW4NhoGyC_/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    })
+  </script>
+
+</body>
+</html>
