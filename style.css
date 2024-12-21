@@ -27,8 +27,23 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-.L1{
-    width: 70px;
+@font-face {
+    font-family: 'Commando';
+    src: url('fonts/Commando.woff2') format('woff2'),
+         url('fonts/Commando.woff') format('woff'),
+         url('fonts/Commando.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+#waveText {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+#waveText span {
+    display: inline-block; 
+    transition: transform 0.2s ease-out;
 }
 nav ul{
     display: flex;
@@ -126,7 +141,8 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 .tab-links.active-link::after{
-    width: 50%;
+    width: 70%;
+    padding: 0 15px;
 }
 .tab-contents ul li{
     list-style: none;
@@ -285,8 +301,13 @@ nav ul li a:hover::after{
     transform: translateY(-5px);
 }
 .btn.btn2{
-    display: inline-block;
+    display: center;
     background: #ff0000;
+
+}
+.btn.btn2:hover{
+    transform: translateY(.3);
+    background: #9d0101;
 }
 .content-right form{
     width: 100%;
