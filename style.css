@@ -415,16 +415,3 @@ nav .fa-solid{
     display: block;
 }
 
-.grad-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  width: 100%;
-}
-
-.grad-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
-  object-fit: cover;
-}
