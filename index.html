@@ -1,277 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content = "IE = edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack - IT, Data Analytics, Cyber Seuirty</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/457e5bfab1.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jack – IT, Data Analytics, Cyber Security</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/457e5bfab1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+<!-- ──────────  HERO  ────────── -->
 <div id="header">
-    <div class="container">
-        <nav>
-            <h3 id="waveText" class="logo">JAC<span  idclass="logo-k">K</span></h3>
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-         </nav>
-         <div class="header-text">
-            <p>Full Stack Developer</p>
-            <h1><span> Jack Kammerer </span><br> from Austin, Texas.</h1>
-         </div>
+  <div class="container">
+    <nav>
+      <h3 id="waveText" class="logo">JAC<span class="logo-k">K</span></h3>
+
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://jackbytes.tech" target="_blank" rel="noopener">Blog</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div class="header-text">
+      <p>Full Stack Developer</p>
+      <h1><span>Jack Kammerer</span><br>from Austin, Texas.</h1>
     </div>
+  </div>
 </div>
 
-<div id = "about">
-    <div class = "container">
-        <div class = "row";>
-            <div class="about-col-1">
-              <div class="grad-grid">
-                <img src="images/grad1.JPG" alt="Graduation 1" />
-                <img src="images/grad2.jpg" alt="Graduation 2" />
-                <img src="images/grad3.jpg" alt="Graduation 3" />
-                <img src="images/grad4.JPG" alt="Graduation 4" />
-              </div>
-            </div>
-            <div class = "about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>
-                    I am a recent graduate from Texas State University, holding a Bachelor’s degree in Computer Science with a minor in Business Administration.
-                    As a passionate technology enthusiast, I have deepened my understanding of complex systems and honed my problem-solving skills throughout my
-                    academic journey. This has fueled my interest in IT, Data Analytics, and Cybersecurity. Through hands-on projects and coursework, I have 
-                    developed a versatile skill set, positioning me well for a variety of tech roles.
-                    <br><br>
-
-                    In the field of IT, I have gained practical experience in system administration, network management, and technical support. My work with 
-                    Raspberry Pi devices has allowed me to integrate specialized functionalities ranging from home automation to network-level content filtering 
-                    and security enhancements. These projects reinforced the importance of clear communication, thorough documentation, and a user-focused 
-                    approach. In addition, I have engaged with Python-based frameworks—such as Flask—to develop and deploy tailored web applications, refining 
-                    both the technical architecture and the user experience. Involvement in extracurricular activities like Boko Hacks, the Google Developer 
-                    Student Club, and IEEE has further broadened my professional network and exposed me to collaborative problem-solving approaches.
-                    <br><br>
-                    
-                    In the realm of Data Analytics, I have honed my skills in data preprocessing, exploratory data analysis, and statistical modeling. Data 
-                    Analytics and Cybersecurity are areas where I am particularly proficient. I have a strong command of SQL and MySQL, having managed large 
-                    datasets to extract actionable insights, and I am well-versed in statistical methods and probability distributions, essential for data-driven 
-                    decision-making. My Cybersecurity experience includes working with proactive security measures, network traffic analysis, and system exploitation 
-                    mitigation techniques. Staying updated with industry trends and emerging technologies ensures that I can effectively protect digital assets while 
-                    also implementing robust security protocols.
-                    <br><br>
-
-                    As I embark on my professional journey, I remain committed to continuous learning and excellence, eager to apply my comprehensive skill set and 
-                    deep knowledge to make a meaningful impact in IT, Data Analytics, or Cybersecurity.
-                    
-                </p>
-
-                <div class = "tab-titles">
-                    <p class = "tab-links active-link" onclick = "opentab('skills')">Skills</p>
-                    <p class = "tab-links" onclick = "opentab('experience')">Experience</p>
-                    <p class = "tab-links" onclick = "opentab('education')">Education</p>
-                </div>
-                <div class = "tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Web Development</span><br>Front-End Framework Proficiency, Server-Side Intergration, Full-Stack Troubleshooting</li>
-                        <li><span>App Development</span><br>Building Android/IOS apps</li>
-                        <li><span>Database</span><br>Data Modeling, SQL Query Writing, Database Design</li>
-                        <li><span>System Security</span><br>Network Traffic Analysis, Exploit Mitigation, Packet Inspection</li>
-                        <li><span>UNIX</span><br>Command-Line Proficiency, Shell Scripting, System Administration Basics</li>
-                        <li><span>Software Engineering</span><br>Agile Development, Version Control, Code Review</li>
-                    </ul>
-                </div>
-                <div class = "tab-contents" id="experience">
-                    <ul>
-                        <li><span>2024-current</span><br>DNS Pi-hole Project</li>
-                        <li><span>2024-2024</span><br>Computer System Security</li>
-                        <li><span>2024-2024</span><br>UNIX</li>
-                        <li><span>2024-2024</span><br>Software Engineering</li>
-                        <li><span>2024-2024</span><br>TXST Exclusive Marketplace Project</li>
-                        <li><span>2023-2024</span><br>Web Development</li>
-                        <li><span>2023-2023</span><br>Computer Architecture</li>
-                        <li><span>2023-2023</span><br>Object Oriented Programming</li>
-                        <li><span>2023-2023</span><br>Assembly Launage Programming</li>
-                        <li><span>2022-2023</span><br>Data Structures & Algorithms</li>
-                        <li><span>2022-2022</span><br>ICPC</li>
-                    </ul>
-                </div>
-                <div class = "tab-contents" id="education">
-                    <ul>
-                        <li><span>2025</span><br>Bachelors in Computer Science</li>
-                        <li><span>2025</span><br>Minor in Business Administration</li>
-                    </ul>
-                </div>
-            </div>
+<!-- ──────────  ABOUT  ────────── -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <div class="grad-grid">
+          <img src="images/grad1.JPG" alt="Graduation 1">
+          <img src="images/grad2.jpg" alt="Graduation 2">
+          <img src="images/grad3.jpg" alt="Graduation 3">
+          <img src="images/grad4.JPG" alt="Graduation 4">
         </div>
+      </div>
+
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+          I am a recent graduate from Texas State University, holding a Bachelor’s degree in Computer Science with a minor in Business Administration.
+          As a passionate technology enthusiast, I have deepened my understanding of complex systems and honed my problem-solving skills throughout my
+          academic journey. This has fueled my interest in IT, Data Analytics, and Cybersecurity. Through hands-on projects and coursework, I have 
+          developed a versatile skill set, positioning me well for a variety of tech roles.
+          <br><br>
+
+          In the field of IT, I have gained practical experience in system administration, network management, and technical support. My work with 
+          Raspberry Pi devices has allowed me to integrate specialized functionalities ranging from home automation to network-level content filtering 
+          and security enhancements. These projects reinforced the importance of clear communication, thorough documentation, and a user-focused 
+          approach. In addition, I have engaged with Python-based frameworks—such as Flask—to develop and deploy tailored web applications, refining 
+          both the technical architecture and the user experience. Involvement in extracurricular activities like Boko Hacks, the Google Developer 
+          Student Club, and IEEE has further broadened my professional network and exposed me to collaborative problem-solving approaches.
+          <br><br>
+                    
+          In the realm of Data Analytics, I have honed my skills in data preprocessing, exploratory data analysis, and statistical modeling. Data 
+          Analytics and Cybersecurity are areas where I am particularly proficient. I have a strong command of SQL and MySQL, having managed large 
+          datasets to extract actionable insights, and I am well-versed in statistical methods and probability distributions, essential for data-driven 
+          decision-making. My Cybersecurity experience includes working with proactive security measures, network traffic analysis, and system exploitation 
+          mitigation techniques. Staying updated with industry trends and emerging technologies ensures that I can effectively protect digital assets while 
+          also implementing robust security protocols.
+          <br><br>
+
+          As I embark on my professional journey, I remain committed to continuous learning and excellence, eager to apply my comprehensive skill set and 
+          deep knowledge to make a meaningful impact in IT, Data Analytics, or Cybersecurity.
+        </p>
+
+        <!-- TAB HEADERS -->
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+
+        <!-- TAB : SKILLS -->
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+            <li><span>Web Development</span><br>Front-End Frameworks, Server-Side Integration, Troubleshooting</li>
+            <li><span>App Development</span><br>Building Android/iOS apps</li>
+            <li><span>Database</span><br>Data Modeling, SQL, Design</li>
+            <li><span>System Security</span><br>Traffic Analysis, Exploit Mitigation, Packet Inspection</li>
+            <li><span>UNIX</span><br>CLI, Shell Scripting, SysAdmin basics</li>
+            <li><span>Software Engineering</span><br>Agile, Git, Code Review</li>
+          </ul>
+        </div>
+
+        <!-- TAB : EXPERIENCE -->
+        <div class="tab-contents" id="experience">
+          <div class="exp-list">
+
+            <!-- BPM generator -->
+            <div class="exp-item">
+                <span class="exp-date">[2025]</span>
+                <h4>BPM Playlist Generator (Flask / React)</h4>
+                <p>Flask REST API ingests Spotify tracks; filters by BPM and auto-builds playlists and saves to the users account.</p>
+                </div>
+
+            <!-- Web scraper -->
+            <div class="exp-item">
+                <span class="exp-date">[2025]</span>
+                <h4>Job Aggregator Lite</h4>
+                <p>Python + Playwright crawler → local LLM parsing (Ollama / Code-Ollama) → normalized tables in Oracle & MySQL (Docker + phpMyAdmin).</p>
+            </div>
+
+            <!-- Tech blog -->
+            <div class="exp-item">
+                <span class="exp-date">[2024/2025]</span>
+                <h4>Tech Blog (Flask API • React + Vite)</h4>
+                <p>Full-stack; Flask delivers JSON/Markdown API; front-end renders MDX posts, fast refresh via Vite; full SEO routing.</p>
+            </div>
+
+            <!-- Marketplace -->
+            <div class="exp-item">
+                <span class="exp-date">[2024]</span>
+                <h4>TXST Marketplace (Flask + Firebase)</h4>
+                <p>Flask app with Jinja HTML/CSS front-end; Firebase Auth & Cloud Firestore DB for listings; deployed on Heroku via Bitbucket Pipeline.</p>
+            </div>
+
+            <!-- MIPS project -->
+            <div class="exp-item">
+                <span class="exp-date">[2023]</span>
+                <h4>MIPS Assembler → Hex Translator</h4>
+                <p>Two-pass C assembler; 95 % test coverage, CI pipeline.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TAB : EDUCATION -->
+        <div class="tab-contents" id="education">
+          <div class="edu-grid">
+            <div>
+              <h3 class="exp-heading">Degree</h3>
+              <p><span class="exp-date">2025</span><br>B.S. Computer Science</p>
+              <p><span class="exp-date">2025</span><br>Minor Business Administration</p>
+            </div>
+
+            <div>
+              <h3 class="exp-heading">Coursework Highlights</h3>
+              <ul class="course-list">
+                <li>Data Structures &amp; Algorithms</li>
+                <li>Algorithm Design &amp; Analysis</li>
+                <li>Computer Architecture</li>
+                <li>Unix System Programming</li>
+                <li>Software Engineering</li>
+                <li>Object-Oriented Design &amp; Programming</li>
+                <li>Internet Software Development</li>
+                <li>Computer System Security</li>
+                <li>Intro to Databases</li>
+                <li>Intro to AI Systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
-<div id = "work">
-    <div class = "container">
-        <h1 class = "sub-title">My Work</h1>
-        <div class = "services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>I create custom, responsive websites that perfectly balance functionality with 
+<!-- ──────────  WORK  ────────── -->
+<div id="work">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>I create custom, responsive websites that perfectly balance functionality with 
                     aesthetics. My designs ensure a seamless user experience that captivates your 
                     audience and solidifies your online presence.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop-simple"></i>
-                <h2>UI/UX Design</h2>
-                <p>I design intuitive and visually engaging user interfaces that enhance usability
+      </div>
+      <div>
+        <i class="fa-solid fa-crop-simple"></i>
+        <h2>UI/UX Design</h2>
+        <p>I design intuitive and visually engaging user interfaces that enhance usability
                     and maximize user satisfaction. My focus is on creating seamless interactions 
                     across all devices, making every user journey a pleasant one.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>App Design</h2>
-                <p>I develop cutting-edge mobile applications tailored to your specific business 
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store"></i>
+        <h2>App Design</h2>
+        <p>I develop cutting-edge mobile applications tailored to your specific business 
                     requirements. My approach combines attractive, user-friendly design with robust
                     functionality, delivering apps that not only look great but perform brilliantly.</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 </div>
 
+<!-- ──────────  CONTACT  ────────── -->
 <div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> JackWilliamKammerer@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i> 512-487-2919</p>
-                <div class="social-icons">
-                    <a href="https://instagram.com/jwk.zip/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/jack-kammerer-6b60bb311" target="_blank">
-                      <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-                <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
-            </div>
-            <div class="contact-right"> 
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Eamil" placeholder="Your Email" required>
-                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i> JackWilliamKammerer@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i> 512-487-2919</p>
+
+        <div class="social-icons">
+          <a href="https://instagram.com/jwk.zip/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/jack-kammerer-6b60bb311" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
+
+        <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+      </div>
+
+      <div class="contact-right">
+        <form id="contactForm" action="https://formspree.io/f/xzzgdlwk" method="POST">
+          <input type="text"   name="name"     placeholder="Your Name"  required>
+          <input type="email"  name="_replyto" placeholder="Your Email" required>
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="formMsg"></span>
+      </div>
     </div>
-    <div class="copyright">
-        <p>© Jack Kammerer.</p>
-    </div>
+  </div>
+
+  <div class="copyright">
+    <p>&copy; Jack Kammerer.</p>
+  </div>
 </div>
 
+<!-- ──────────  SCRIPTS  ────────── -->
 <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-   
-    function opentab(tabname){
-        for(let tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(let tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
+/* ===== Tabs ===== */
+const tabLinks = document.querySelectorAll('.tab-links');
+const tabContents = document.querySelectorAll('.tab-contents');
+function opentab(tab) {
+  tabLinks.forEach(l => l.classList.remove('active-link'));
+  tabContents.forEach(c => c.classList.remove('active-tab'));
+  event.currentTarget.classList.add('active-link');
+  document.getElementById(tab).classList.add('active-tab');
+}
 </script>
 
 <script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
+/* ===== Mobile nav ===== */
+const sidemenu = document.getElementById('sidemenu');
+const openmenu = () => (sidemenu.style.right = '0');
+const closemenu = () => (sidemenu.style.right = '-200px');
 </script>
 
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyyTn8mtkKwrcmHssI6VqznmgKD1ZGJefcgj-osNo7kaTre9GvJ_FKeCDaW4NhoGyC_/exec';
-    const form = document.forms['submit-to-google-sheet'];
-    const msg = document.getElementById("msg");
+/* ===== Contact form (Formspree) ===== */
+const form = document.getElementById('contactForm');
+const msgEl = document.getElementById('formMsg');
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  msgEl.textContent = 'Sending…';
+  try {
+    const res = await fetch(form.action, { method:'POST', headers:{Accept:'application/json'}, body:new FormData(form)});
+    msgEl.textContent = res.ok ? '✅ Message sent!' : '⚠️ Error, try later.';
+    if (res.ok) form.reset();
+  } catch { msgEl.textContent = '⚠️ Network error.'; }
+  setTimeout(() => (msgEl.textContent = ''), 5000);
+});
+</script>
 
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000);
-            form.reset();
-        })
-        .catch(error => console.error('Error!', error.message));
-    })
-  </script>
-  <script>
-    // 1. Grab the text element.
-    const waveText = document.getElementById("waveText");
-    
-    // 2. Extract the text content and split it into characters.
-    const textContent = waveText.textContent;
-    const characters = textContent.split("");
-
-    // 3. Clear the original text so we can rebuild it with spans.
-    waveText.textContent = "";
-
-    // 4. Loop through each character and wrap it in a <span>.
-    characters.forEach(char => {
-      const span = document.createElement("span");
-      span.textContent = char;
-      waveText.appendChild(span);
-    });
-
-    // 5. Get all the span elements (each letter).
-    const letters = waveText.querySelectorAll("span");
-
-    // 6. For the wave animation, we’ll vary each letter’s translateY.
-    let angle = 0; // This will increment every frame to animate.
-
-    function animateWave() {
-      letters.forEach((letter, index) => {
-        // offset determines the horizontal spacing effect (so they’re not all in sync)
-        const offset = index * 10 + angle;
-        
-        // amplitude is how high/low letters move
-        const amplitude = 10; // adjust for more or less “wave”
-        
-        // convert offset to radians for Math.sin
-        const wave = Math.sin(offset * (Math.PI / 180)) * amplitude;
-
-        // apply translateY to move each letter up/down
-        letter.style.transform = `translateY(${wave}px)`;
-      });
-
-      // Increase angle so the wave moves over time
-      angle += 2;
-
-      // Use requestAnimationFrame for smooth 60fps animation
-      requestAnimationFrame(animateWave);
-    }
-
-    // Start the animation
-    animateWave();
-  </script>
-
+<script>
+/* ===== Logo wave ===== */
+const waveText = document.getElementById('waveText');
+const chars = [...waveText.textContent]; waveText.textContent = '';
+chars.forEach(ch => waveText.appendChild(Object.assign(document.createElement('span'), {textContent:ch})));
+const letters = waveText.querySelectorAll('span'); let angle = 0;
+(function animate() {
+  letters.forEach((l,i)=>l.style.transform=`translateY(${Math.sin((i*10+angle)*Math.PI/180)*10}px)`);
+  angle+=2; requestAnimationFrame(animate);
+})();
+</script>
 </body>
 </html>
-
