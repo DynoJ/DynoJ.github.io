@@ -69,7 +69,6 @@
           modern software workflows. I'm committed to continuous learning, and I’m excited to bring my full-stack skill set to roles in software engineering, systems integration, or adjacent tech domains.
         </p>
 
-
         <!-- TAB HEADERS -->
         <div class="tab-titles">
           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -93,11 +92,18 @@
         <!-- TAB : EXPERIENCE -->
         <div class="tab-contents" id="experience">
           <div class="exp-list">
+            <!-- Library Management System project -->
+            <div class="exp-item">
+                <span class="exp-date">[2025]</span>
+                <h4>Java Library Management System</h4>
+                <p>Built a Java-based MVC system to manage user accounts, checkouts/returns, and item requests using OOP and design patterns (Singleton, Factory). 
+                  Modeled architecture and workflows with UML class and sequence diagrams.</p>
+            </div>
 
             <!-- BPM generator -->
             <div class="exp-item">
                 <span class="exp-date">[2025]</span>
-                <h4>BPM Playlist Generator (Flask / React)</h4>
+                <h4>BPM Playlist Generator (Flask / HTML&CSS)</h4>
                 <p>Flask REST API ingests Spotify tracks; filters by BPM and auto-builds playlists and saves to the users account.</p>
                 </div>
 
@@ -121,14 +127,6 @@
                 <h4>TXST Marketplace (Flask + Firebase)</h4>
                 <p>Flask app with Jinja HTML/CSS front-end; Firebase Auth & Cloud Firestore DB for listings; deployed on Heroku via Bitbucket Pipeline.</p>
             </div>
-
-            <!-- MIPS project -->
-            <div class="exp-item">
-                <span class="exp-date">[2023]</span>
-                <h4>MIPS Assembler → Hex Translator</h4>
-                <p>Two-pass C assembler; 95 % test coverage, CI pipeline.</p>
-            </div>
-
           </div>
         </div>
 
@@ -145,7 +143,6 @@
               <h3 class="exp-heading">Coursework Highlights</h3>
               <ul class="course-list">
                 <li>Data Structures &amp; Algorithms</li>
-                <li>Algorithm Design &amp; Analysis</li>
                 <li>Computer Architecture</li>
                 <li>Unix System Programming</li>
                 <li>Software Engineering</li>
@@ -168,31 +165,61 @@
   <div class="container">
     <h1 class="sub-title">My Work</h1>
     <div class="services-list">
-      <div>
+
+      <!-- Web Design -->
+      <div class="service-card"
+          role="button" tabindex="0" aria-label="Open Web Design case study"
+          data-mode="video"
+          data-title="Web Design — TXST Marketplace"
+          data-desc="An exclusive student marketplace built with Flask, Firebase Auth, and Cloud Firestore. This in-depth walk-through covers the design rationale, UI layouts, user flows for posting and searching listings, and deployment via Bitbucket Pipeline → Heroku. Focused on creating a secure, intuitive, and visually consistent platform for Texas State University students."
+          data-src="videos/txstMarket.mp4">
         <i class="fa-solid fa-code"></i>
         <h2>Web Design</h2>
         <p>I create custom, responsive websites that perfectly balance functionality with 
-                    aesthetics. My designs ensure a seamless user experience that captivates your 
-                    audience and solidifies your online presence.</p>
+        aesthetics. My designs ensure a seamless user experience that captivates your 
+        audience and solidifies your online presence.</p>
       </div>
-      <div>
+
+      <!-- UI/UX Design -->
+      <div class="service-card"
+          role="button" tabindex="0"
+          data-mode="video"
+          data-title="UI/UX Design — BPM Playlist Generator"
+          data-desc="This project, built for my Human Factors course, demonstrates the principles of human-centered design in action. In a team of three, we created a BPM Playlist Generator web app that integrates with Spotify’s API. Every element — from minimal-click flows to clear visual hierarchy — was designed to reduce cognitive load, ensure accessibility, and make playlist creation intuitive for all users."
+          data-src="videos/bpm.mp4">
         <i class="fa-solid fa-crop-simple"></i>
         <h2>UI/UX Design</h2>
         <p>I design intuitive and visually engaging user interfaces that enhance usability
-                    and maximize user satisfaction. My focus is on creating seamless interactions 
-                    across all devices, making every user journey a pleasant one.</p>
+        and maximize user satisfaction. My focus is on creating seamless interactions 
+        across all devices, making every user journey a pleasant one.</p>
       </div>
-      <div>
+
+      <!-- App Design -->
+      <div class="service-card"
+          role="button" tabindex="0" aria-label="Open App Design UML case study"
+          data-mode="uml"
+          data-title="App Design — Java Library System (UML)"
+          data-desc="Translating requirements into complete UML: use-case (User/Librarian actions) → class model with MVC layers (View, Controller, Model) → checkout sequence → loan lifecycle state machine. Highlights: clear Controller → Service/Manager → Repository flow; core entities (User, LibraryItem, Loan, Request); and patterns in use — Singleton (LoanManager/RequestManager), Strategy (CheckoutStrategy), Observer (LoanObserver), and State (LoanState)."
+          data-uml="images/UML/UseCaseDiagram.png, images/UML/ClassDiagram.png, images/UML/SequenceDiagram.png, images/UML/StateDiagram.png"
+          data-uml-captions="Use-Case: roles & goals|Class Diagram: MVC layers + entities|Sequence: Checkout flow|Activity: Return processing|State: Item availability lifecycle">
         <i class="fa-brands fa-app-store"></i>
         <h2>App Design</h2>
-        <p>I develop cutting-edge mobile applications tailored to your specific business 
-                    requirements. My approach combines attractive, user-friendly design with robust
-                    functionality, delivering apps that not only look great but perform brilliantly.</p>
+        <p>I develop cutting-edge applications tailored to your business requirements.  
+        From initial concepts to robust implementations, I blend user-friendly design with  
+        solid architecture by using UML-driven planning — to deliver apps that not only  
+        look great but perform brilliantly.</p>
       </div>
+
     </div>
   </div>
 </div>
-
+<dialog id="demoModal" class="demo-modal">
+  <button class="modal-close" type="button" aria-label="Close">&times;</button>
+  <h2 id="modalTitle"></h2>
+  <p id="modalDesc"></p>
+  <video id="modalVideo" controls preload="metadata" style="display:none;"></video>
+  <div id="modalGallery" style="display:none;"></div>
+</dialog>
 <!-- ──────────  CONTACT  ────────── -->
 <div id="contact">
   <div class="container">
@@ -274,6 +301,122 @@ const letters = waveText.querySelectorAll('span'); let angle = 0;
 (function animate() {
   letters.forEach((l,i)=>l.style.transform=`translateY(${Math.sin((i*10+angle)*Math.PI/180)*10}px)`);
   angle+=2; requestAnimationFrame(animate);
+})();
+</script>
+
+<script>
+/* ===== Service cards → Modal controller (no page jump) ===== */
+(function () {
+  const modal = document.getElementById('demoModal');
+  const title = document.getElementById('modalTitle');
+  const desc  = document.getElementById('modalDesc');
+  const video = document.getElementById('modalVideo');
+  const gallery = document.getElementById('modalGallery');
+  const closeBtn = modal.querySelector('.modal-close');
+
+  // NEW: keep track of scroll and lock/unlock it
+  let lastScrollY = 0;
+  function lockScroll() {
+    lastScrollY = window.scrollY || window.pageYOffset;
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
+    document.body.style.top = `-${lastScrollY}px`;
+  }
+  function unlockScroll() {
+    document.body.style.position = '';
+    document.body.style.width = '';
+    document.body.style.top = '';
+    window.scrollTo(0, lastScrollY);
+  }
+
+  function openVideo(src) {
+    gallery.style.display = 'none';
+    gallery.innerHTML = '';
+    video.style.display = 'block';
+    video.src = src;
+    modal.showModal();
+    const p = video.play();
+    if (p && typeof p.catch === 'function') p.catch(() => {});
+  }
+
+  function openUML(listStr) {
+    video.pause();
+    video.removeAttribute('src');
+    video.load();
+    video.style.display = 'none';
+    gallery.style.display = 'grid';
+    gallery.innerHTML = '';
+    const items = (listStr || '').split(',').map(s => s.trim()).filter(Boolean);
+    items.forEach(src => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = src.split('/').pop().replace(/\.\w+$/, '');
+      gallery.appendChild(img);
+    });
+    modal.showModal();
+  }
+
+  function openModalFor(card) {
+    // NEW: freeze background scroll exactly where it is
+    lockScroll();
+
+    title.textContent = card.dataset.title || '';
+    desc.textContent  = card.dataset.desc  || '';
+    if (card.dataset.mode === 'video') {
+      openVideo(card.dataset.src);
+    } else if (card.dataset.mode === 'uml') {
+      openUML(card.dataset.uml);
+    }
+    // ensure no jump after paint
+    requestAnimationFrame(() => window.scrollTo(0, lastScrollY));
+  }
+
+  function closeModal() {
+    modal.close();
+    video.pause();
+    video.removeAttribute('src');
+    video.load();
+    // NEW: restore scroll
+    unlockScroll();
+  }
+
+  document.querySelectorAll('.services-list .service-card').forEach(card => {
+    // NEW: prevent default on click too (not just keydown)
+    const handler = (e) => {
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      openModalFor(card);
+    };
+    card.addEventListener('click', handler);
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault(); e.stopPropagation();
+        handler(e);
+      }
+    });
+  });
+
+  // NEW: if any tiles are wrapped in anchors, kill their default nav
+  document.querySelectorAll('.services-list a').forEach(a => {
+    a.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); });
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', e => {
+    const rect = modal.getBoundingClientRect();
+    if (
+      e.clientX < rect.left || e.clientX > rect.right ||
+      e.clientY < rect.top  || e.clientY > rect.bottom
+    ) closeModal();
+  });
+
+  // NEW: if user closes with ESC, still restore scroll
+  modal.addEventListener('close', () => {
+    video.pause();
+    video.removeAttribute('src');
+    video.load();
+    unlockScroll();
+  });
 })();
 </script>
 </body>
