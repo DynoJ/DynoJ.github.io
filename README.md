@@ -21,7 +21,7 @@ End-to-end marketplace application demo showcasing full-stack development capabi
 Human Factors project emphasizing accessibility and cognitive load reduction
 - **Focus:** Accessibility-first design, low cognitive load interface
 - **Process:** User research → wireframes → prototypes → testing
-- **Outcome:** [95% user satisfaction, <2 second generation time (Full Report)](docs/FinalReport.pdf)
+- **Outcome:** [95% user satisfaction, <2 second generation time (Full Report)](images/FinalReport.pdf)
 
 ### App Design — Java Library System
 Complete system architecture from requirements to implementation
